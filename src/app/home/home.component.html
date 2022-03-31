@@ -1,0 +1,369 @@
+<head>
+    <title>Airbnb</title>
+   </head>
+    <body>
+     <header class="header">
+      <div class="header__logo">
+        <img src="../assets/icons/logo.jpg">
+      </div>
+      <div class="header__search">
+        <button>Location</button>
+        <span></span>
+        <button>Period</button>
+        <span></span>
+        <button>
+          guests
+          <div class="header__searchIcon">
+            <img src="../assets/icons/searchIcon.jpg">
+          </div>
+        </button>
+      </div>
+      <div class="header__nav">
+        <a (click)="navForFormImovel()" class="header__nav__button header__nav__button-greyHover"
+          >Be a host</a
+        >
+        <button
+          class="header__nav__button header__nav__button-language header__nav__button-greyHover"
+        >
+          <img src="../assets/icons/globe.jpg">
+          <img src="../assets/icons/chevronDown.jpg">
+        </button>
+        <button class="header__nav__button header__nav__button-account">
+          <img src="../assets/icons/hamburger.jpg">
+          <img src="../assets/icons/account.jpg">
+        </button>
+      </div>
+    </header>
+    <div class="main">
+        <div class="main__content">
+          <h1>Stay in a selected area on the map!</h1>
+          <h1> Let your curiosity do the booking....</h1>
+
+          <div class="main__filters">
+            <button class="outlined curved">Flexible cancellation</button>
+            <button class="outlined curved">Place type</button>
+            <button class="outlined curved">Price</button>
+            <button class="outlined curved">Instant booking</button>
+            <button class="outlined curved">More filters</button>
+          </div>
+          <div class="main__scarcity">
+            <img src="../assets/icons/calendar.gif">
+            <span>
+              Airbnb, as in “Air Bed and Breakfast,” is a service that lets property owners rent out their spaces to travelers looking for a place to stay. Travelers can rent a space for multiple people to share, a shared space with private rooms, or the entire property for themselves.
+
+            </span>
+          </div>
+          <div class="listings">
+            <div class="listings__item" *ngFor="let imovel of imoveis" >
+              <div class="listings__image listings__image-superHost" >
+                <button>
+                  <img src="../assets/icons/chevronLeft.jpg">
+                </button>
+                <button>
+                  <img src="../assets/icons/chevronRight.jpg">
+                </button>
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2635&q=80" alt="">
+              </div>
+              <div class="listings__content" *ngIf="imovel">
+                <div class="listings__title">
+                  <div class="listings__icon__text">
+                    <span class="greyText">{{imovel.description}}</span>
+                    <h2>{{imovel.description}}</h2>
+                  </div>
+                  <div class="listings__title__icon">
+                    <button>
+                      <img src="../assets/icons/heart.jpg">
+                    </button>
+                  </div>
+                </div>
+                <div class="separator"></div>
+                <div class="listings__description">
+                  <span class="greyText">PRICE: $400/night</span>
+                  <span class="greyText">Entire villa in Alibag<br>
+
+                    Leisurely Clair De Lune Jacuzzi+Waterfall Alibaug<br>
+                    
+                    6 guests 2 bedrooms-2 beds 3bathrooms<br>
+                    
+                    Wifi- Air conditioning Kitchen Free parking</span>
+                </div>
+                <div class="listings__details">
+                  <div class="listings__rating">
+                    <img src="../assets/icons/star.jpg">
+                    <span>5 ​​<span>(14 reviews)</span></span>
+                  </div>
+                  <div class="listings__price">
+                    <div class="listings__price__night">
+                    </div>
+                    <div class="listings__price__total">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listings">
+        <div class="listings__item" *ngFor="let imovel of imoveis" >
+          <div class="listings__image listings__image-superHost" >
+            <button>
+              <img src="../assets/icons/chevronLeft.jpg">
+            </button>
+            <button>
+              <img src="../assets/icons/chevronRight.jpg">
+            </button>
+            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-52671760/original/4ce2acc1-c781-42d0-bfea-59de214bb1be.jpeg?im_w=720" alt="">
+          </div>
+          <div class="listings__content" *ngIf="imovel">
+            <div class="listings__title">
+              <div class="listings__icon__text">
+                <span class="greyText">{{imovel.description}}</span>
+                <h2>{{imovel.description}}</h2>
+              </div>
+              <div class="listings__title__icon">
+                <button>
+                  <img src="../assets/icons/heart.jpg">
+                </button>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="listings__description">
+              <span class="greyText">PRICE:11,429/night</span>
+              <span class="greyText">
+                Entire rental unit in Alibag<br>
+
+Airy & Bright Couples Getaway, Varsoli, Alibaug<br>
+
+4 guests 1bedroom 1 bed 1 bathroom<br>
+
+Airconditioning Kitchen-Flee parking
+              </span>
+            </div>
+            <div class="listings__details">
+              <div class="listings__rating">
+                <img src="../assets/icons/star.jpg">
+                <span>4 ​​<span>(18 reviews)</span></span>
+              </div>
+              <div class="listings__price">
+                <div class="listings__price__night">
+                </div>
+                <div class="listings__price__total">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listings">
+        <div class="listings__item" *ngFor="let imovel of imoveis" >
+          <div class="listings__image listings__image-superHost" >
+            <button>
+              <img src="../assets/icons/chevronLeft.jpg">
+            </button>
+            <button>
+              <img src="../assets/icons/chevronRight.jpg">
+            </button>
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-550536768159472223/original/cac8c140-ac29-47fa-9743-1c36d0e37781.jpeg?im_w=720" alt="">
+          </div>
+          <div class="listings__content" *ngIf="imovel">
+            <div class="listings__title">
+              <div class="listings__icon__text">
+                <span class="greyText">{{imovel.description}}</span>
+                <h2>{{imovel.description}}</h2>
+              </div>
+              <div class="listings__title__icon">
+                <button>
+                  <img src="../assets/icons/heart.jpg">
+                </button>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="listings__description">
+              <span class="greyText">PRICE:2,540/night</span>
+              <span class="greyText">
+                Private room in Alibag<br>
+
+                Tree House - Coconut Beach Resort<br>
+                
+                4 guests 1 bedroom 1 bed 1 private bathroom Wifi - Air conditioning. Free parking<br>
+              </span>
+            </div>
+            <div class="listings__details">
+              <div class="listings__rating">
+                <img src="../assets/icons/star.jpg">
+                <span>4.86 ​​<span>(26 reviews)</span></span>
+              </div>
+              <div class="listings__price">
+                <div class="listings__price__night">
+                </div>
+                <div class="listings__price__total">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listings">
+        <div class="listings__item" *ngFor="let imovel of imoveis" >
+          <div class="listings__image listings__image-superHost" >
+            <button>
+              <img src="../assets/icons/chevronLeft.jpg">
+            </button>
+            <button>
+              <img src="../assets/icons/chevronRight.jpg">
+            </button>
+            <img src="https://a0.muscache.com/im/pictures/4bd55221-1b6c-454b-b3a1-a9e4f74aac0c.jpg?im_w=720" alt="">
+          </div>
+          <div class="listings__content" *ngIf="imovel">
+            <div class="listings__title">
+              <div class="listings__icon__text">
+                <span class="greyText">{{imovel.description}}</span>
+                <h2>{{imovel.description}}</h2>
+              </div>
+              <div class="listings__title__icon">
+                <button>
+                  <img src="../assets/icons/heart.jpg">
+                </button>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="listings__description">
+              <span class="greyText">PRICE:26,429/night</span>
+              <span class="greyText">
+                Entire apartment in Alibag<br>
+
+SUPERHOST<br>
+
+Vitamin Sea<br>
+
+8 guests 2 bedrooms-2 beds 2 bathrooms Wifi-Air conditioning Kitchen-Free parking<br>
+              </span>
+            </div>
+            <div class="listings__details">
+              <div class="listings__rating">
+                <img src="../assets/icons/star.jpg">
+                <span>4.90 ​​<span>(30 reviews)</span></span>
+              </div>
+              <div class="listings__price">
+                <div class="listings__price__night">
+                </div>
+                <div class="listings__price__total">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listings">
+        <div class="listings__item" *ngFor="let imovel of imoveis" >
+          <div class="listings__image listings__image-superHost" >
+            <button>
+              <img src="../assets/icons/chevronLeft.jpg">
+            </button>
+            <button>
+              <img src="../assets/icons/chevronRight.jpg">
+            </button>
+            <img src="https://a0.muscache.com/im/pictures/bc7b1184-f8a3-459f-8f5a-d5db07195789.jpg?im_w=720" alt="">
+          </div>
+          <div class="listings__content" *ngIf="imovel">
+            <div class="listings__title">
+              <div class="listings__icon__text">
+                <span class="greyText">{{imovel.description}}</span>
+                <h2>{{imovel.description}}</h2>
+              </div>
+              <div class="listings__title__icon">
+                <button>
+                  <img src="../assets/icons/heart.jpg">
+                </button>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="listings__description">
+              <span class="greyText">PRICE:89,071/night</span>
+              <span class="greyText">
+                Entire villa in Bamnoli<br>
+
+                Forest Villa: Cozy 2BHK by Limestays<br>
+                
+                8 guests 2 bedrooms 4 beds-2.5 bathrooms Wifi-Air conditioning Kitchen Free parking<br>
+              </span>
+            </div>
+            <div class="listings__details">
+              <div class="listings__rating">
+                <img src="../assets/icons/star.jpg">
+                <span>5 ​​<span>(18 reviews)</span></span>
+              </div>
+              <div class="listings__price">
+                <div class="listings__price__night">
+                </div>
+                <div class="listings__price__total">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listings">
+        <div class="listings__item" *ngFor="let imovel of imoveis" >
+          <div class="listings__image listings__image-superHost" >
+            <button>
+              <img src="../assets/icons/chevronLeft.jpg">
+            </button>
+            <button>
+              <img src="../assets/icons/chevronRight.jpg">
+            </button>
+            <img src="https://a0.muscache.com/im/pictures/3a21ac03-965c-422a-8b04-0bc115463db5.jpg?im_w=720" alt="">
+          </div>
+          <div class="listings__content" *ngIf="imovel">
+            <div class="listings__title">
+              <div class="listings__icon__text">
+                <span class="greyText">{{imovel.description}}</span>
+                <h2>{{imovel.description}}</h2>
+              </div>
+              <div class="listings__title__icon">
+                <button>
+                  <img src="../assets/icons/heart.jpg">
+                </button>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="listings__description">
+              <span class="greyText">PRICE:11,314/night</span>
+              <span class="greyText">
+                Entire villa in Nagaon<br>
+
+                Mango House Nagaon<br>
+                
+                12 guests - 5 bedrooms 5 beds 5.5 bathrooms Wifi- Air conditioning Kitchen Free parking<br>
+              </span>
+            </div>
+            <div class="listings__details">
+              <div class="listings__rating">
+                <img src="../assets/icons/star.jpg">
+                <span>4.76 ​​<span>(179 reviews)</span></span>
+              </div>
+              <div class="listings__price">
+                <div class="listings__price__night">
+                </div>
+                <div class="listings__price__total">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="main__map">
+            <div class="main__googleMap">
+              <img src="https://a0.muscache.com/im/pictures/23b047cd-19c9-42c0-a83b-2f4f6f25717b.jpg?im_w=1200 " height="700"width=640>
+
+              <div id="map"></div>
+            </div>
+          </div>
+      </body>

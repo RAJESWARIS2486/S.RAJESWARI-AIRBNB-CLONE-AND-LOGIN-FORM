@@ -1,0 +1,15 @@
+.loginform{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #eee714e1;
+  font-family: 'Montserrat', Arial;
+  padding: 0.01vh 16vw ;
+}
+.loginform > h2{
+    margin: 2.5vh;
+    text-align: center;
+    color: #2cacc9;
+}
+.loginformb{
+    display: flex;
+}

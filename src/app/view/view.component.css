@@ -1,0 +1,58 @@
+.main-root{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#back_trans{ 
+    min-height: 96vh !important;
+    min-width: 98vw !important;
+    background-image: url("https://media.istockphoto.com/photos/pastel-pink-and-blue-angular-abstract-background-picture-id909303758?k=20&m=909303758&s=612x612&w=0&h=6D93nU5AE-TDGpKO4qaddYbG4AzBg_horkOIbJhpSZs=");
+    position:fixed;
+    z-index: 100 ;
+    left: 1vw;
+    top: 2vh;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    padding-top: 18vh;
+}
+#back_trans h1{
+    color: rgba(18, 202, 86, 0.81);
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+#back_trans > .read-more{
+    margin: 2vh 5vw;
+}
+#back_trans span{
+    color:#02caa2;
+    font-family: cursive;
+}
+#back_trans > p{
+    color: rgba(213, 78, 24, 0.877);
+    margin: 10vh auto;
+    font-size: 3.5vh;
+    font-weight: 600;
+    font-family: cursive;
+}
+    #back_trans h1{
+        color: rgba(100, 36, 209, 0.844);
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    }
+    #back_trans h2{
+        color: rgba(220, 26, 184, 0.81);
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    }
+    #back_trans > .read-more{
+        margin: 2vh 1vw;
+    }
+    #back_trans span{
+        color:#02caa2;
+        font-family: cursive;
+    }
+    #back_trans > p{
+        color: rgba(197, 235, 30, 0.843);
+        margin: 10vh auto;
+        font-size: 3vh;
+        font-weight: 600;
+        font-family: cursive;
+    }

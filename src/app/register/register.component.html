@@ -1,0 +1,45 @@
+<div>
+    <mat-card>
+      <mat-card-title>Property Registration:</mat-card-title>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Do you have wifi?</mat-label><br>
+          <mat-select>
+            <mat-option [(ngModel)]="imovel.isWifi" value="true">Yes</mat-option>
+            <mat-option [(ngModel)]="imovel.isWifi" value="false">No</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Do you have TV?</mat-label><br>
+          <mat-select>
+            <mat-option [(ngModel)]="imovel.isTV" value="true">Yes</mat-option>
+            <mat-option [(ngModel)]="imovel.isTV" value="false">No</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Do you have a kitchen?</mat-label><br>
+          <mat-select>
+            <mat-option [(ngModel)]="imovel.isKitchen" value="true">Yes</mat-option>
+            <mat-option [(ngModel)]="imovel.isKitchen" value="false">No</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Detailed Description</mat-label><br>
+            <textarea matInput required
+            [(ngModel)]="imovel.description"
+            ></textarea>
+          </mat-form-field>
+          <mat-form-field floatLabel="always">
+            <mat-label>Daily Value</mat-label>
+            <input [(ngModel)]="imovel.price" matInput class="example-left-align" placeholder="0">
+            <span matPrefix>$&nbsp;</span>
+          </mat-form-field>  
+        </form> 
+        <button mat-raised-button color="primary" (click)="postImovel()" color="primary">
+          To save
+        </button>  
+        <button mat-raised-button color="primary"(click)="cancel()" >
+        Cancel
+        </button>
+        </mat-card>
+        </div>

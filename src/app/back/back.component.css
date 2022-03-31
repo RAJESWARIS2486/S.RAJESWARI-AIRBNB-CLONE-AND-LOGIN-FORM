@@ -1,0 +1,33 @@
+.back{
+    background-color: rgb(21, 228, 38);
+    min-width: none;
+    height: 80vh;
+    width: 30vw;
+    margin-left: 8vw;
+    /*border-top: 6px solid #6100bb;*/
+    padding: 1vh 4vw;
+    /*overflow-y: scroll;*/
+}
+.back > .heading{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 700;
+    margin: 2vh;
+    padding: 0px;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+    color: #bb9900 ;
+}
+.head{
+    text-align: center;
+    margin: 1vh;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.back > label{
+    font-size: 1.9vh;
+}
+.back > input{
+    height: 35px;
+    margin-bottom: 1vh;
+}
